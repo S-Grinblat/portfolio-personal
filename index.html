@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+
+    <header class="header" id="header">
+      <nav class="nav ">
+        <a href="#" class="nav__logo">Santiago</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <img class="nav-item__img" id="home" src="icons-active/homeActive.svg" alt="Home"> Inicio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <img class="nav-item__img" id="user" src="icons-active/userActive.svg" alt="About"> Curriculum
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <img class="nav-item__img" id="image" src="icons-active/imageActive.svg" alt="Portfolio"> Proyectos
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <img class="nav-item__img" id="message" src="icons-active/messageActive.svg" alt="contact"> Contacto
+              </a>
+            </li>
+          </ul>
+          <span class="nav__close" id="nav-close">X</span>
+        </div>
+        <div class="nav__btns">
+          <div class="nav__toggle" id="nav-toggle">
+            <img class="nav-item__img" src="icons-active/appsActive.svg" alt="Apps">
+          </div>
+        </div>
+        <label class="switch" id="nav-toggle">
+          <input type="checkbox" id="theme-button" onclick="dark()">
+          <span class="slider"></span>
+        </label>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="btn_dark">
+            <label form="#btn" class="switch">
+              <input id="btn" type="checkbox" onclick="dark()">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="home__content grid">
+            <div class="home__social">
+              <a href="#" target="_blank" class="home__social-icon">
+                <img class="social-icon" src="icons-active/linkedinActive.svg" alt="Linkedin">
+              </a>
+              <a href="#" target="_blank" class="home__social-icon">
+                <img class="social-icon" src="icons-active/githubActive.svg" alt="Git HUb">
+              </a>
+            </div>
+            <div class="home__img">
+              <svg viewBox="10 10 200 200" xmlns="http://www.w3.org/2000/svg" class="svg__home">
+                <path fill="#9301019c" d="M42.4,-22C55.4,-2,66.7,21.5,59.3,35.8C52,50,26,54.9,-0.1,55C-26.2,55.1,-52.5,50.3,-60.8,35.5C-69.1,20.7,-59.4,-4,-46.3,-24.1C-33.2,-44.2,-16.6,-59.6,-0.9,-59.1C14.7,-58.5,29.4,-42,42.4,-22Z" transform="translate(100 100)" />
+              </svg>
+            </div>
+            <div class="home__data">
+              <h1 class="home__title">Hola, soy Santiago</h1>
+              <h3 class="home__subtitle">Frontend developer</h3>
+              <p class="home__description">Mi nombre es Grinblat Santiago, tengo veintiun (21) años. Me encuentro aprendiendo Desarrollo de Software en la plataforma de educacion de <a href="https://platzi.com" target="_blank" rel="noopener noreferrer">PLATZI</a> en donde llevo estudiando mas de un (1) año. En donde aprendi HTML, CSS, JavaScript, React, a utilizar GIT. y me encuentro aprendiendo Python.</p>
+              <a href="#contact" class="button button--flex">
+                <button class="button-home">
+                  <span>Contact Me</span>
+                  <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                      <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                  </svg>
+              </button>
+              </a>
+            </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <img class="home__scroll-mouse" src="icons/mouse.svg" alt="mouse">
+              <span class="home__scroll-name">Scroll down</span>
+              <img class="home__scroll-arrow" src="/icons-active/down-chevronActive.svg" alt="down">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about__container">
+          <h2 class="section__title">About Me</h2>
+          <span class="section__subtitle">My introduction</span>
+          <div class="container__img container grid">
+            <img src="images/istockphoto-923099290-170667a.jpg" alt="" class="about__img">
+          </div>
+          <div class="introduction__container">
+            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eveniet explicabo accusamus optio adipisci rerum animi facilis voluptates, corporis quo unde. Tenetur numquam suscipit excepturi harum aspernatur consequatur, dolor aliquam.</p>
+            <button class="about-download">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z" fill="currentColor"></path></svg>
+              <span>Download</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Proyectos</h2>
+        <span class="section__subtitle">proyectos personales en los que trabajo</span>
+        <p class="text-content">desplaza los proyectos para ver mas... 
+          <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+            <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+        </svg>
+        </p>
+        <div class="portfolio__container">
+          <div class="portfolio__project">
+            <div class="portfolio__content">
+              <img src="images/proyecto-1.png" alt="imagen del proyecto" class="portfolio__img">
+              <div class="portfolio__data">
+                <h4 class="portfolio__title">Batabit cripto monedas</h4>
+                <p class="portfolio__description">Se trata de una pagina donde se pueden ver y "Comprar" cripto monedas, ademas tenes suscripciones en los cuales obtenes beneficios como profesionales de la industria que te ayudan a comprar y entender el nuevo mercado mundial </p>
+                <a href="https://teal-puppy-d845a4.netlify.app" class="button button--flex button--small portfolio__button" target="_blank" rel="noopener noreferrer">Leer Mas
+                  <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="37" cy="37" r="35.5" stroke="white" stroke-width="3"></circle>
+                    <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="white"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__content">
+              <img src="images/proyecto-2.png" alt="imagen del proyecto" class="portfolio__img">
+              <div class="portfolio__data">
+                <h4 class="portfolio__title">casa de pastas</h4>
+                <p class="portfolio__description">Un comercio dedicado exclusivamente a crear y elavorar pastas cada una de estas con detalles que la hacen Unica. ademas los clientes podran acceder a la lista de ingredientes para que puedan ver si contiene algo a los que sean alergico</p>
+                <a href="https://aquamarine-tulumba-068a4a.netlify.app" class="button button--flex button--small portfolio__button" target="_blank" rel="noopener noreferrer">Leer Mas
+                  <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="37" cy="37" r="35.5" stroke="white" stroke-width="3"></circle>
+                    <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="white"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__content">
+              <img src="images/proyecto-4.png" alt="imagen del proyecto" class="portfolio__img">
+              <div class="portfolio__data">
+                <h4 class="portfolio__title">Calculadora</h4>
+                <p class="portfolio__description">prototipo de una calculadora simple, los colores se utilizan para diferenciar entre operadores y formatos de resultados funciona con todos tipos de calculos matematicos</p>
+                <a href="https://dancing-toffee-be839c.netlify.app" class="button button--flex button--small portfolio__button" target="_blank" rel="noopener noreferrer">Leer Mas
+                  <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="37" cy="37" r="35.5" stroke="white" stroke-width="3"></circle>
+                    <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="white"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__content">
+              <img src="images/proyecto-5.png" alt="imagen del proyecto" class="portfolio__img">
+              <div class="portfolio__data">
+                <h4 class="portfolio__title">tienda de remeras</h4>
+                <p class="portfolio__description">Este diseño todavia se encuentra en etapa de creacion.</p>
+                <a href="#" class="button button--flex button--small portfolio__button">Proximamente
+                  <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="37" cy="37" r="35.5" stroke="white" stroke-width="3"></circle>
+                    <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="white"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__content">
+              <img src="images/proyecto-6.png" alt="imagen del proyecto" class="portfolio__img">
+              <div class="portfolio__data">
+                <h4 class="portfolio__title">Sneakers</h4>
+                <p class="portfolio__description">sneakers es una ecomers muy Superficial, en donde se puede ver lo minimo que se necesitaria para poder realizar un simple pedido en base al producto seleccionado, sumando las cantidades del mismo.</p>
+                <a href="https://strong-croissant-997625.netlify.app/" class="button button--flex button--small portfolio__button" target="_blank" rel="noopener noreferrer">Leer Mas
+                  <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="37" cy="37" r="35.5" stroke="white" stroke-width="3"></circle>
+                    <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="white"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__content">
+              <img src="images/proyecto-7.png" alt="imagen del proyecto" class="portfolio__img">
+              <div class="portfolio__data">
+                <h4 class="portfolio__title">Turismo Espacial</h4>
+                <p class="portfolio__description">Turismo Espacial es una pagina donde podes obtener detalles de los satellites y planetas del sistema solar, ademas de ver la tecnologia actual para movernos entre las estrellas y sus tripulantes.</p>
+                <a href="https://bejewelled-mermaid-66b5b6.netlify.app" class="button button--flex button--small portfolio__button" target="_blank" rel="noopener noreferrer">Leer Mas
+                  <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="37" cy="37" r="35.5" stroke="white" stroke-width="3"></circle>
+                    <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="white"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="detail__portfolio">Todos los proyectos van de menos a mas en lo que a conocimientos refiere, cada una se hizo con un nivel de aprendizaje, esto se puede reflejar en el tipo de pagina que es, si es estatica, solo de informacion O dinamica con interaccion sobre botones, zonas de interes ETC.</p>
+      </section>
+
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contacto</h2>
+        <span class="section__subtitle"></span>
+        <div class="contact__container">
+          <div >
+            <div class="contact__information">
+              <img class="contact__icon" src="icons/phone-call.svg" alt="phone">
+              <h3 class="contact__title">Celular :</h3>
+              <div class="contact-info__container">
+                <span class="contact__subtitle"> (+54) 1123014038</span>
+              </div>
+
+            </div>
+            <div class="contact__information">
+              <img class="contact__icon" src="icons/message.svg" alt="phone">
+              <div class="contact-info__container">
+                <h3 class="contact__title">Email :</h3>
+                <span class="contact__subtitle">silva.santiago1185@gmail.com</span>
+              </div>
+
+            </div>
+            <div class="contact__information">
+              <img class="contact__icon" src="icons/location.svg" alt="phone">
+              <div class="contact-info__container">
+                <h3 class="contact__title">Localizacion :</h3>
+                <span class="contact__subtitle">Argentina - Buenos Aires</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Santiago</h1>
+            <span class="footer__subtitle">Frontend Developer</span>
+          </div>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Inicio</a>
+            </li>
+
+            <li>
+              <a href="#about" class="footer__link">Curriculum</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="footer__link">Proyectos</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="footer__link">Contacto</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <img class="icon__social" src="icons-active/instagramActive.svg" alt="instagram">
+            </a>
+            <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <img class="icon__social" src="icons-active/twitterActive.svg" alt="twitter">
+            </a>
+          </div>
+        </div>
+        <p class="footer__copy">&#169; right reserved</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
